@@ -1,0 +1,19 @@
+.form-control:focus{
+  box-shadow:none !important
+}
+
+@media (max-width: 576px){
+  .media{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .media > .news {
+    width:100% !important;
+  }
+  
+  .media-body{
+    margin-top:-12%;
+    text-align:center
+  }
+}
