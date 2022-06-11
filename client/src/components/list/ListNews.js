@@ -9,6 +9,7 @@ import {deleteNews, getListNews} from "../../api/api"
 import moment from "moment"
 import {ToastContainer, toast} from "react-toastify"
 import {useNavigate} from "react-router-dom"
+import Footer from "../footer/Footer"
 const ListNews = () => {
   const query = useQuery("posts", getListNews)
   const queryClient = useQueryClient()
@@ -69,6 +70,7 @@ const ListNews = () => {
            )}
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
